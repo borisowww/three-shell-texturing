@@ -1,5 +1,9 @@
 # Three.js Shell Texturing Playground
 
+## Demo
+
+Check out a demo [here](https://borisowww-three-shell.netlify.app/)
+
 ## Getting Started
 
 ### Installation
