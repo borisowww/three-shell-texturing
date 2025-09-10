@@ -64,7 +64,7 @@ export class Grid extends component(Object3D, {
     });
   }
   onDebug({ gui }) {
-    this.gui = gui.addFolder('Grid');
+    this.gui = gui.addFolder('Grid').close();
     this.gui
       .add(this.material.uniforms.u_majorLineWidth, 'value', 0, 1)
       .name('Major Line Width');

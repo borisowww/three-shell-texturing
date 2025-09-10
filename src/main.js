@@ -7,8 +7,7 @@ import loader from '@/canvas/loader';
 import renderer from '@/canvas/renderer';
 import scene from '@/canvas/scene';
 import { Grid } from '@/canvas/meshes/Grid/Grid';
-import { Suzanne } from '@/canvas/meshes/Suzanne/Suzanne';
-import {PlaneCollection} from "@/canvas/meshes/Plane/planeCollection.js";
+import {Plane} from "@/canvas/meshes/Plane/plane.js";
 
 let stats = null;
 
@@ -29,8 +28,6 @@ class Site extends component(null, {
 
   onRaf() {
     renderer.render(scene, camera);
-    // postprocess
-    // postfx.render(scene, camera);
   }
   onAfterRaf() {
     if (!stats) return
@@ -43,8 +40,7 @@ class Site extends component(null, {
     }
   }
   onLoadEnd() {
-    new Grid()
-    new PlaneCollection()
+    new Plane();
   }
 }
 

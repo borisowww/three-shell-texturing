@@ -23,12 +23,8 @@ const loadersMap = {
 
 const RESOURCES = [
   {
-    name: 'matcap',
-    url: '/img/matcap.webp',
-  },
-  {
-    name: 'suzanne',
-    url: '/glb/suzanne.glb',
+    name: 'grassTexture',
+    url: '/img/texture.webp',
   },
 ];
 
